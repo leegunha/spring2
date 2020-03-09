@@ -1,0 +1,4 @@
+
+1월 21, 2020 14:42:47.84 NEW SESSION
+1월 21, 2020 14:42:47.84 [9536:9940:0121/144247.836:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -118
+1월 21, 2020 14:56:59.11 [2368:2252:0121/145659.113:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -118

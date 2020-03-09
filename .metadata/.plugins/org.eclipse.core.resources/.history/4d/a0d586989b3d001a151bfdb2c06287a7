@@ -1,0 +1,31 @@
+package di3;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import di2.MessagBeanImpEn;
+import di2.MessagBeanImpKr;
+
+public class MainEntry {
+	public static void main(String[] args) {
+		
+		ApplicationContext  ctx = 
+				new ClassPathXmlApplicationContext("di3/applicationCtx.xml");  // spring 컨테이너 생성함
+		
+		MessagBean  bean = (MessagBean)ctx.getBean("en", MessagBean.class);
+		bean.sayHello("Spring Fun!!! ");
+		
+		
+		
+//		MessagBeanImpEn en = new MessagBeanImpEn();
+//		en.sayHello("Spring");
+//		
+//		MessagBeanImpKr kr = new MessagBeanImpKr();
+//		kr.sayHello("스프링");
+	}
+}
+
+
+
+
+
